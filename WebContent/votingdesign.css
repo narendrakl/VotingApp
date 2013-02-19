@@ -1,0 +1,12 @@
+@CHARSET "ISO-8859-1";
+
+#register {
+	display: none;
+}
+
+.votingtable {
+	background-color:#d3d3d3;
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+}

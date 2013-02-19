@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Voting Form</title>
+ 	<link rel="stylesheet" type="text/css" href="votingdesign.css">
+ 		<script type='text/javascript' src='C:\Users\Narendrakl\Desktop\jquery.js'></script>
+ 	<script type='text/javascript'>
+ 		$(document).ready(function () {
+ 			$('input[type=radio]').live('click', function () {
+ 				showSubmit();
+ 				function clearform(){
+ 	 	 			$('input[type=radio]:checked').each(function(){
+ 	 	 				$(this).checked = false;	
+ 	 	 			});
+ 			});	
+ 			
+ 			showSubmit(); //this will be called on document load;
+ 	 		
+ 	 		
+ 		});
+ 		function showSubmit(){ 
+ 			
+ 			if($('input[type=radio]:checked').length == 9)
+ 				$('#register').css('display','block');
+ 			else 
+ 				$('#register').css('display','none'); 			
+ 		}
+ 		
+ 	</script>
+</head>
+<body >
+	<div class="votingtable">
+ 	<form action="VotingInt.jsp" method="get">
+		<fieldset>
+			<legend>Voting Form</legend>
+			<fieldset>
+				<legend><b>President Post</b></legend>
+					<table cellspacing='5' cellpadding='5'>
+					<tr>
+		 			 <td> 
+					Name 1:
+					Image 1:
+					uid1:<input type='radio' name='uid1' value="KVA2013P91"   />
+				 	 </td>
+					</tr>
+					<tr>
+		 		 <td>
+		 		 	Name P:
+					Image P:
+					uid2:<input type='radio' name='uid1'  value="KVA2013P92"  />
+		 		 	</td>
+		 		</tr> 
+				</table>
+		 		
+			</fieldset>
+			<fieldset>
+				<legend>Vice-President Post</legend>
+				<table cellspacing='5' cellpadding='5'>
+				<tr>
+		 		 <td> 
+					Name 2: 
+					Image 2:
+					uid3:<input type='radio' name='uid2' value="KVA2013VP93"   /> 
+					
+				 </td>
+				</tr>
+				<tr>
+		 		 <td>
+		 		 	Name V:
+					Image V:
+					uid4:
+		 		 	<input type='radio' name='uid2'  value="KVA2013VP94"  />
+		 		 </td>
+		 		</tr> 
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Secretary Post</legend>
+				<table cellspacing='5' cellpadding='5'>
+		 		<tr>
+		 		 <td> 
+					Name 3: 
+					Image 3:
+					uid5: 
+					<input type='radio' name='uid3' value="KVA2013S95"  />
+				 </td>
+				</tr>
+				<tr>
+		 		 <td>
+		 		 	Name S:
+					Image S:
+					uid6:
+		 		 	<input type='radio' name='uid3' value="KVA2013S96"  />
+		 		 </td>
+		 		</tr>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Cashier Post</legend>
+				<table cellspacing='5' cellpadding='5'>
+		 		<tr>
+		 		 <td>
+					Name 4: 
+		 		    Image 4: 
+		 		    uid7:
+					<input type='radio' name='uid4' value="KVA2013C97"  />
+				 </td>
+				</tr>
+				<tr>
+		 		 <td>
+		 		 	Name C:
+					Image C:
+					uid8:
+		 		 	<input type='radio' name='uid4' value="KVA2013C98"  />
+		 		 </td>
+		 		</tr> 
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Assistant Secretary</legend>
+				<table cellspacing='5' cellpadding='5'>
+		 		<tr>
+		 		 <td> 
+					Name 5: 
+					Image 5:
+					uid9: 
+					<input type='radio' name='uid5' value="KVA2013AS99"  />
+				 </td>
+				 </tr>
+		 		 <tr>
+				 <td>
+		 		 	Name AS:
+					Image AS:
+					uid10:
+		 		 	<input type='radio' name='uid5' value="KVA2013AS100"  />
+		 		 </td>
+		 		</tr> 
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Director1 Post</legend>
+				<table cellspacing='5' cellpadding='5'>
+		 		<tr>
+		 		 <td> 
+					Name 6: 
+					Image 6: 
+					uid11:
+					<input type='radio' name='uid6' value="KVA2013D1101"  />
+				 </td>
+				 </tr>
+				 <tr>
+		 		 <td>
+		 		 	Name D1:
+					Image D1:
+					uid12:
+		 		 	<input type='radio' name='uid6' value="KVA2013D1102"  />
+		 		 </td>
+		 		</tr> 
+				</table>
+				</fieldset>
+			<fieldset>
+				<legend>Director2 Post</legend>
+				<table cellspacing='5' cellpadding='5'>
+		 		<tr>
+		 		 <td> 
+					Name 7: 
+					Image 7: 
+					uid13:
+					<input type='radio' name='uid7' value="KVA2013D2103"  />
+				 </td>
+				 </tr>
+				 <tr>
+		 		 <td>
+		 		 	Name D2:
+					Image D2:
+					uid14:
+		 		 	<input type='radio' name='uid7' value="KVA2013D2104"  />
+		 		 </td>
+		 		</tr> 
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Director3 Post</legend>
+				<table cellspacing='5' cellpadding='5'>
+		 		<tr>
+		 		 <td> 
+					Name 8: 
+					Image 8: 
+					uid15:
+					<input type='radio' name='uid8'  value="KVA2013D3105" />
+				 </td>
+				 </tr>
+				 <tr>
+		 		 <td>
+		 		 	Name D3:
+					Image D3:
+					uid16:
+		 		 	<input type='radio' name='uid8' value="KVA2013D3106"  />
+		 		 </td>
+		 		</tr> 
+		 		</table>
+			</fieldset>
+			<fieldset>
+				<legend>Director4 Post</legend>
+				<table cellspacing='5' cellpadding='5'>
+		 		<tr>
+		 		 <td> 
+					Name 9: 
+					Image 9: 
+					uid17:
+					<input type='radio' name='uid9' value="KVA2013D4107"  />
+				 </td>
+				 </tr>
+				 <tr>
+		 		 <td>
+		 		 	Name D4:
+					Image D4:
+					uid18
+		 		 	<input type='radio' name='uid9' value="KVA2013D4108"  />
+		 		 </td>
+		 		</tr> 
+		 		</table>
+			</fieldset>
+			
+	</fieldset>
+		<input type="submit" name='Register' id='register'  />
+	</form>
+ </div>
+
+</body>
+</html>
